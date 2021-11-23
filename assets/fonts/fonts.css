@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'MTGSans';
+    font-weight: bold;
+    font-style: normal;
+    src: url('./MTGSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'MTGSans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('./MTGSans-Regular.ttf');
+}

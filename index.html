@@ -1,0 +1,196 @@
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <link rel="stylesheet" href="assets/style.css">
+
+    <title>LoadWatch</title>
+</head>
+    <body class="bg-dark container">
+        <header>
+            <nav class="navbar navbar-dark bg-dark">
+                <!-- Navbar content -->
+                <img src="assets/images/ViaplayLogoHori.png" alt="Viaplay">
+                <h1 class="text-white">Load Watch</h1>
+                <h4 id="todayDateNav" class="text-white"></h4>
+            </nav>
+            <hr class="bg-light">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="./pages/calendarEventsPage.html">Calendar Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Applications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Nearest Event State</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Next Event Configuration</a>
+                </li>
+            </ul>
+        </header>
+        <br>
+        <!-- Search functionality -->
+        <nav class="navbar navbar-light justify-content-center">
+            <form class="form-inline row">
+                <input class="col form-control mr-sm-2" type="search" placeholder="Type an event name" aria-label="Search" id="search">
+                <ul class="nav col justify-content-center">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-danger btn-lg" type="submit" value="hot" id="hot-filter">Hot</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-primary btn-lg" type="submit" value="upcoming" id="upcoming-filter">Upcoming</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-info btn-lg" type="submit" value="past" id="past-filter">Past</button>
+                    </li>
+                </ul>
+            </form>
+        </nav>
+
+        <!-- Cards -->
+        <div class="container">
+            <div class="row card-deck">
+                <div class="col card text-center">
+                    <img src="/assets/images/img_2.png" alt="pinned" class="pinned">
+                    <div class="card-body">
+                        <img src="/assets/images/Bundesliga.jpg" alt="image" style="max-height: 200px; max-width: 260px;"><br>
+                        <h4 class="card-title">American Football: NFL</h4>
+                        <p class="card-text">26.11.2021</p>
+                        <div class="dropdown-divider"></div>
+                        <div class="card-body">
+                            <small class="text-white bg-primary text-wrap" style="padding: 3px; border-radius: 3px;">upcoming</small>
+                            <small class="text-white bg-secondary text-wrap" style="padding: 3px; border-radius: 3px;">nearest event</small>
+                        </div>
+                            <a href="#"><button type="button" class="btn btn-primary">See Results</button></a>
+                    </div>
+                </div>
+                <div class="col card text-center">
+                    <img src="/assets/images/img_2.png" alt="pinned" class="pinned">
+                    <div class="card-body">
+                        <img src="/assets/images/Hockey.png" alt="image" style="max-height: 200px; max-width: 260px;"><br>
+                        <h4 class="card-title">Ice Hockey: NHL</h4>
+                        <p class="card-text">25.11.2021</p>
+                        <div class="dropdown-divider"></div>
+                        <div class="card-body">
+                            <small class="text-white bg-danger text-wrap" style="padding: 3px; border-radius: 3px;">hot</small>
+                            <small class="text-white bg-secondary text-wrap" style="padding: 3px; border-radius: 3px;">currently active</small>
+                        </div>
+                        <a href="#"><button type="button" class="btn btn-danger">See Results</button></a>
+                    </div>
+                </div>
+                <div class="col card text-center">
+                    <img src="/assets/images/img_2.png" alt="pinned" class="pinned">
+                    <div class="card-body">
+                        <img src="/assets/images/Chempleague.png" alt="image" style="max-height: 200px; max-width: 260px;"><br>
+                        <h4 class="card-title">Football: UEFA Champions League</h4>
+                        <p class="card-text">24.11.2021</p>
+                        <div class="dropdown-divider"></div>
+                        <div class="card-body">
+                            <small class="text-white bg-info text-wrap" style="padding: 3px; border-radius: 3px;">past</small>
+                            <small class="text-white bg-secondary text-wrap" style="padding: 3px; border-radius: 3px;">just finished</small>
+                        </div>
+                        <a href="assets/tables/pastTable.html"><button type="button" class="btn btn-outline-info">See Results</button></a>
+                    </div>
+                </div>
+
+                <div class="col card text-center">
+                    <div class="card-body">
+                        <img src="/assets/images/Chempleague.png" alt="image" style="max-height: 200px; max-width: 260px;"><br>
+                        <h4 class="card-title">Football: UEFA Champions League</h4>
+                        <p class="card-text">24.11.2021</p>
+                        <div class="dropdown-divider"></div>
+                        <div class="card-body">
+                            <small class="text-white bg-info text-wrap" style="padding: 3px; border-radius: 3px;">past</small>
+                        </div>
+<!--                        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop-past">See Results</button>-->
+                        <a href="assets/tables/pastTable.html"><button type="button" class="btn btn-outline-info">See Results</button></a>
+                    </div>
+                </div>
+                <!-- Force next columns to break to new line -->
+                <div class="w-100"></div>
+
+
+            </div>
+        </div>
+
+        <!-- Modal past-->
+        <div class="modal fade" id="staticBackdrop-past" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop-pastLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-white" id="staticBackdropLabel">Signup scenarios info</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container mt-3">
+                            <table class="table table-dark table-hover">
+                                <thead>
+                                <tr>
+                                    <th>App Name</th>
+                                    <th>Date</th>
+                                    <th>Accounts</th>
+                                    <th>Status</th>
+                                    <th>Details</th>
+                                    <th>Load Hevier</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>John</td>
+                                    <td>Doe</td>
+                                    <td>john@example.com</td>
+                                    <td>john@example.com</td>
+                                    <td>john@example.com</td>
+                                    <td>john@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                    <td>mary@example.com</td>
+                                    <td>mary@example.com</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                                <tr>
+                                    <td>July</td>
+                                    <td>Dooley</td>
+                                    <td>july@example.com</td>
+                                    <td>july@example.com</td>
+                                    <td>july@example.com</td>
+                                    <td>july@example.com</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-white">
+            Viaplay footer
+        </footer>
+
+
+
+    <!-- Bootstrap JS assets -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
+    </body>
+</html>
