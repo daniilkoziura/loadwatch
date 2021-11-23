@@ -15,111 +15,244 @@
     <title>LoadWatch</title>
 </head>
     <body class="bg-dark container">
-        <header>
+        <header style="margin-top: 1.25%">
             <nav class="navbar navbar-dark bg-dark">
                 <!-- Navbar content -->
-                <img src="assets/images/ViaplayLogoHori.png" alt="Viaplay">
-                <h1 class="text-white">Load Watch</h1>
+                <img src="assets/images/header-logo-large.png" alt="Viaplay" width="144" height="35">
+                <h1 class="page-title text-white">Load Watch</h1>
                 <h4 id="todayDateNav" class="text-white"></h4>
+
             </nav>
+            <a class="events-calendar-link nav-link text-light" href="./pages/calendarEventsPage.html">
+                Calendar events
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"></path>
+                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                </svg>
+            </a>
             <hr class="bg-light">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="./pages/calendarEventsPage.html">Calendar Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Applications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Nearest Event State</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#">Next Event Configuration</a>
-                </li>
-            </ul>
+<!--            <ul class="nav justify-content-center">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-light" href="./pages/calendarEventsPage.html">Calendar Events</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-light" href="#">Applications</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-light" href="#">Nearest Event State</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link text-light" href="#">Next Event Configuration</a>-->
+<!--                </li>-->
+<!--            </ul>-->
         </header>
         <br>
         <!-- Search functionality -->
         <nav class="navbar navbar-light justify-content-center">
             <form class="form-inline row">
-                <input class="col form-control mr-sm-2" type="search" placeholder="Type an event name" aria-label="Search" id="search">
+                <input class="load-tests-search-bar col form-control mr-sm-2" type="search" placeholder="Type an event name" aria-label="Search" id="search">
                 <ul class="nav col justify-content-center">
                     <li class="nav-item">
-                        <button class="btn btn-outline-danger btn-lg" type="submit" value="hot" id="hot-filter">Hot</button>
+                        <button class="btn btn-primary btn-lg" type="submit" value="upcoming" id="upcoming-filter">Upcoming</button>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-outline-primary btn-lg" type="submit" value="upcoming" id="upcoming-filter">Upcoming</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-outline-info btn-lg" type="submit" value="past" id="past-filter">Past</button>
+                        <button class="btn btn-success btn-lg" type="submit" value="past" id="past-filter">Past</button>
                     </li>
                 </ul>
             </form>
         </nav>
 
-        <!-- Cards -->
+        <!-- New Cards -->
         <div class="container">
-            <div class="row card-deck">
-                <div class="col card text-center">
-                    <img src="/assets/images/img_2.png" alt="pinned" class="pinned">
+            <!--1 row-->
+            <div class="row card-row">
+                <!--1-->
+                <div class="col card-column">
                     <div class="card-body">
-                        <img src="/assets/images/Bundesliga.jpg" alt="image" style="max-height: 200px; max-width: 260px;"><br>
-                        <h4 class="card-title">American Football: NFL</h4>
-                        <p class="card-text">26.11.2021</p>
-                        <div class="dropdown-divider"></div>
-                        <div class="card-body">
+                        <div class="card-block" style="  background-image: url('assets/images/Bundesliga.jpg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 260px;
+                            height: 200px;
+                            -webkit-box-shadow: inset 0px -35px 15px -5px #212529;
+                            box-shadow: inset 0px -35px 15px -5px #212529;
+                            border-radius: .25rem .25rem 0rem 0rem;">
+                        </div>
+                        <h4 class="card-title">
+                            Bundesliga
                             <small class="text-white bg-primary text-wrap" style="padding: 3px; border-radius: 3px;">upcoming</small>
-                            <small class="text-white bg-secondary text-wrap" style="padding: 3px; border-radius: 3px;">nearest event</small>
+                        </h4>
+                        <div class="card-text">
+                            <p class="card-text">26.10.2021</p>
+                            <a href="#"><button type="button" class="btn see-results-button">Load test results</button></a>
                         </div>
-                            <a href="#"><button type="button" class="btn btn-primary">See Results</button></a>
                     </div>
                 </div>
-                <div class="col card text-center">
-                    <img src="/assets/images/img_2.png" alt="pinned" class="pinned">
+                <!--2-->
+                <div class="col card-column">
                     <div class="card-body">
-                        <img src="/assets/images/Hockey.png" alt="image" style="max-height: 200px; max-width: 260px;"><br>
-                        <h4 class="card-title">Ice Hockey: NHL</h4>
-                        <p class="card-text">25.11.2021</p>
-                        <div class="dropdown-divider"></div>
-                        <div class="card-body">
-                            <small class="text-white bg-danger text-wrap" style="padding: 3px; border-radius: 3px;">hot</small>
-                            <small class="text-white bg-secondary text-wrap" style="padding: 3px; border-radius: 3px;">currently active</small>
+                        <div class="card-block" style="  background-image: url('assets/images/Hockey.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 260px;
+                            height: 200px;
+                            -webkit-box-shadow: inset 0px -35px 15px -5px #212529;
+                            box-shadow: inset 0px -35px 15px -5px #212529;
+                            border-radius: .25rem .25rem 0rem 0rem;">
                         </div>
-                        <a href="#"><button type="button" class="btn btn-danger">See Results</button></a>
+                        <h4 class="card-title">
+                            Ice Hockey: NHL
+                            <small class="text-white bg-primary text-wrap" style="padding: 3px; border-radius: 3px;">upcoming</small>
+                        </h4>
+                        <div class="card-text">
+                            <p class="card-text">26.10.2021</p>
+                            <a href="#"><button type="button" class="btn see-results-button">Load test results</button></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col card text-center">
-                    <img src="/assets/images/img_2.png" alt="pinned" class="pinned">
+                <!--3-->
+                <div class="col card-column">
                     <div class="card-body">
-                        <img src="/assets/images/Chempleague.png" alt="image" style="max-height: 200px; max-width: 260px;"><br>
-                        <h4 class="card-title">Football: UEFA Champions League</h4>
-                        <p class="card-text">24.11.2021</p>
-                        <div class="dropdown-divider"></div>
-                        <div class="card-body">
-                            <small class="text-white bg-info text-wrap" style="padding: 3px; border-radius: 3px;">past</small>
-                            <small class="text-white bg-secondary text-wrap" style="padding: 3px; border-radius: 3px;">just finished</small>
+                        <div class="card-block" style="  background-image: url('assets/images/Chempleague.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 260px;
+                            height: 200px;
+                            -webkit-box-shadow: inset 0px -35px 15px -5px #212529;
+                            box-shadow: inset 0px -35px 15px -5px #212529;
+                            border-radius: .25rem .25rem 0rem 0rem;">
                         </div>
-                        <a href="assets/tables/pastTable.html"><button type="button" class="btn btn-outline-info">See Results</button></a>
+                        <h4 class="card-title">
+                            Champions league
+                            <small class="text-white bg-success text-wrap" style="padding: 3px; border-radius: 3px;">past</small>
+                        </h4>
+                        <div class="card-text">
+                            <p class="card-text">26.10.2021</p>
+                            <a href="#"><button type="button" class="btn see-results-button">Load test results</button></a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col card text-center">
+                <!--4-->
+                <div class="col card-column">
                     <div class="card-body">
-                        <img src="/assets/images/Chempleague.png" alt="image" style="max-height: 200px; max-width: 260px;"><br>
-                        <h4 class="card-title">Football: UEFA Champions League</h4>
-                        <p class="card-text">24.11.2021</p>
-                        <div class="dropdown-divider"></div>
-                        <div class="card-body">
-                            <small class="text-white bg-info text-wrap" style="padding: 3px; border-radius: 3px;">past</small>
+                        <div class="card-block" style="  background-image: url('assets/images/Premier.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 260px;
+                            height: 200px;
+                            -webkit-box-shadow: inset 0px -35px 15px -5px #212529;
+                            box-shadow: inset 0px -35px 15px -5px #212529;
+                            border-radius: .25rem .25rem 0rem 0rem;">
                         </div>
-<!--                        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop-past">See Results</button>-->
-                        <a href="assets/tables/pastTable.html"><button type="button" class="btn btn-outline-info">See Results</button></a>
+                        <h4 class="card-title">
+                            Premier league
+                            <small class="text-white bg-primary text-wrap" style="padding: 3px; border-radius: 3px;">upcoming</small>
+                        </h4>
+                        <div class="card-text">
+                            <p class="card-text">26.10.2021</p>
+                            <a href="#"><button type="button" class="btn see-results-button">Load test results</button></a>
+                        </div>
                     </div>
                 </div>
-                <!-- Force next columns to break to new line -->
-                <div class="w-100"></div>
-
-
+            </div>
+            <!--2 row-->
+            <div class="row card-row">
+                <!--4-->
+                <div class="col card-column">
+                    <div class="card-body">
+                        <div class="card-block" style="  background-image: url('assets/images/Premier.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 260px;
+                            height: 200px;
+                            -webkit-box-shadow: inset 0px -35px 15px -5px #212529;
+                            box-shadow: inset 0px -35px 15px -5px #212529;
+                            border-radius: .25rem .25rem 0rem 0rem;">
+                        </div>
+                        <h4 class="card-title">
+                            Premier league
+                            <small class="text-white bg-success text-wrap" style="padding: 3px; border-radius: 3px;">past</small>
+                        </h4>
+                        <div class="card-text">
+                            <p class="card-text">26.10.2021</p>
+                            <a href="#"><button type="button" class="btn see-results-button">Load test results</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--2-->
+                <div class="col card-column">
+                    <div class="card-body">
+                        <div class="card-block" style="  background-image: url('assets/images/Hockey.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 260px;
+                            height: 200px;
+                            -webkit-box-shadow: inset 0px -35px 15px -5px #212529;
+                            box-shadow: inset 0px -35px 15px -5px #212529;
+                            border-radius: .25rem .25rem 0rem 0rem;">
+                        </div>
+                        <h4 class="card-title">
+                            Ice Hockey: NHL
+                            <small class="text-white bg-primary text-wrap" style="padding: 3px; border-radius: 3px;">upcoming</small>
+                        </h4>
+                        <div class="card-text">
+                            <p class="card-text">26.10.2021</p>
+                            <a href="#"><button type="button" class="btn see-results-button">Load test results</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--1-->
+                <div class="col card-column">
+                    <div class="card-body">
+                        <div class="card-block" style="  background-image: url('assets/images/Bundesliga.jpg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 260px;
+                            height: 200px;
+                            -webkit-box-shadow: inset 0px -35px 15px -5px #212529;
+                            box-shadow: inset 0px -35px 15px -5px #212529;
+                            border-radius: .25rem .25rem 0rem 0rem;">
+                        </div>
+                        <h4 class="card-title">
+                            Bundesliga
+                            <small class="text-white bg-primary text-wrap" style="padding: 3px; border-radius: 3px;">upcoming</small>
+                        </h4>
+                        <div class="card-text">
+                            <p class="card-text">26.10.2021</p>
+                            <a href="#"><button type="button" class="btn see-results-button">Load test results</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="col card-column">
+                    <div class="card-body">
+                        <div class="card-block" style="  background-image: url('assets/images/Chempleague.png');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                            width: 260px;
+                            height: 200px;
+                            -webkit-box-shadow: inset 0px -35px 15px -5px #212529;
+                            box-shadow: inset 0px -35px 15px -5px #212529;
+                            border-radius: .25rem .25rem 0rem 0rem;">
+                        </div>
+                        <h4 class="card-title">
+                            Champions league
+                            <small class="text-white bg-success text-wrap" style="padding: 3px; border-radius: 3px;">past</small>
+                        </h4>
+                        <div class="card-text">
+                            <p class="card-text">26.10.2021</p>
+                            <a href="#"><button type="button" class="btn see-results-button">Load test results</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -179,10 +312,6 @@
                 </div>
             </div>
         </div>
-
-        <footer class="text-white">
-            Viaplay footer
-        </footer>
 
 
 

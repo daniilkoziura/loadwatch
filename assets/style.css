@@ -17,11 +17,102 @@ body {
   justify-content: flex-start;
 }
 
-
-
 /*!
   Customs CSS stylesheet
  */
+.events-calendar-link {
+  padding: initial;
+  text-align: right
+}
+.load-tests-search-bar {
+  background: transparent;
+  border: none;
+  border-bottom: #ffffff 1px solid;
+  border-radius: 0rem;"
+}
+
+.load-tests-search-bar:focus {
+  background: transparent;
+  border: none;
+  border-bottom: #ffffff 2px solid;
+  border-radius: 0rem;"
+}
+
+.page-title {
+  text-align: center;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+.card-row:not(:first-child) {
+  margin-top: 7%;
+  display: flex;
+  justify-content: left;
+  flex-flow: row wrap;
+  align-items: stretch;
+}
+
+.card-title {
+  text-align: center;
+  min-width: 200px;
+  /*min-height: 45px;*/
+  /*font-family: MTG Sans,Helvetica,Arial,sans-serif;*/
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+.card-block {
+  background-image: url('assets/images/Bundesliga.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 260px;
+  height: 200px;
+  -webkit-box-shadow: inset 0px -35px 15px -5px #212529;
+  box-shadow: inset 0px -35px 15px -5px #212529;
+  border-radius: .25rem .25rem 0rem 0rem;"
+}
+
+.card-text {
+  text-align: center;
+  min-width: 200px;
+  min-height: 45px;
+  /*font-family: MTG Sans,Helvetica,Arial,sans-serif;*/
+  font-size: 1em;
+  line-height: 1em;
+  letter-spacing: 0;
+  font-weight: 200;
+  color: #f1f1f1;
+}
+
+.see-results-button {
+  color: #f9f9fb;
+  background-color: #6c6;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 55px;
+  letter-spacing: 0;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 55px;
+  min-width: 100px;
+  padding: 0 50px;
+  margin-top: 5%;
+}
+
+.card-body {
+  background: transparent;
+  border: 1px solid #212529;
+  max-width: 305px;
+}
 
 body {
   background-color: #EEEEEE;
@@ -39,11 +130,11 @@ body {
   margin: 0 auto;
 }
 
-.card-title {
-  text-align: center;
-  min-width: 200px;
-  min-height: 45px;
-}
+/*.card-title {*/
+/*  text-align: center;*/
+/*  min-width: 200px;*/
+/*  min-height: 45px;*/
+/*}*/
 
 .card-shadow {
   -webkit-box-shadow: 0px 0px 28px 14px rgba(232,232,232,1);
