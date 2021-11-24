@@ -10,30 +10,24 @@ function todayNav() {
 }
 
 $('#search').keyup(function (){
-    $('.card').removeClass('d-none');
+    $('.card-column').removeClass('d-none');
     let filter = $(this).val();
-    $('.card-deck').find('.card .card-body h4:not(:contains("'+filter+'"))').parent().parent().addClass('d-none');
+
+    $('.card-column').find('.card-body .card-title span:not(:contains("'+filter+'"))').parent().parent().parent().addClass('d-none');
     // $('.card-deck').find('.card .card-body .card-text small:not(:contains("' + filter + '"))').parent().parent().parent().addClass('d-none');
 })
 $("#upcoming-filter").click(function(e) {
     e.preventDefault();
     $('.card').removeClass('d-none');
     let filter = $(this).val()
-    $('.card-deck').find('.card .card-body .card-body small:first-child:not(:contains("'+filter+'"))').parent().parent().parent().addClass('d-none');
-});
-
-$("#hot-filter").click(function(e) {
-    e.preventDefault();
-    $('.card').removeClass('d-none');
-    let filter = $(this).val()
-    $('.card-deck').find('.card .card-body .card-body small:first-child:not(:contains("'+filter+'"))').parent().parent().parent().addClass('d-none');
+    $('.card-column').find('.card-body .card-title small:not(:contains("'+filter+'"))').parent().parent().parent().addClass('d-none');
 });
 
 $("#past-filter").click(function(e) {
     e.preventDefault();
     $('.card').removeClass('d-none');
     let filter = $(this).val()
-    $('.card-deck').find('.card .card-body .card-body small:first-child:not(:contains("'+filter+'"))').parent().parent().parent().addClass('d-none');
+    $('.card-column').find('.card-body .card-title small:not(:contains("'+filter+'"))').parent().parent().parent().addClass('d-none');
 });
 
 
