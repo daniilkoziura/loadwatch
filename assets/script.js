@@ -30,6 +30,11 @@ $("#past-filter").click(function(e) {
     $('.card-column').find('.card-body .card-title small:not(:contains("'+filter+'"))').parent().parent().parent().addClass('d-none');
 });
 
+function applyLoad() {
+    const message = document.getElementById('sucess-message-users');
+    message.classList.remove('noDisplay');
+}
+
 
 function init() {
     todayNav();

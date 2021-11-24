@@ -6343,14 +6343,14 @@ a.close.disabled {
     outline: 0;
 }
 
-.modal-dialog {
+.modal-dialog .modal-dialog-small {
     position: relative;
     width: auto;
     margin: 0.5rem;
     pointer-events: none;
 }
 
-.modal.fade .modal-dialog {
+.modal.fade .modal-dialog .modal-dialog-small {
     -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: -webkit-transform 0.3s ease-out;
     -o-transition: transform 0.3s ease-out;
@@ -6362,14 +6362,14 @@ a.close.disabled {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .modal.fade .modal-dialog {
+    .modal.fade .modal-dialog .modal-dialog-small {
         -webkit-transition: none;
         -o-transition: none;
         transition: none;
     }
 }
 
-.modal.show .modal-dialog {
+.modal.show .modal-dialog .modal-dialog-small{
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
@@ -6382,13 +6382,13 @@ a.close.disabled {
     max-height: calc(100% - 1rem);
 }
 
-.modal-dialog-scrollable .modal-content {
+.modal-dialog-scrollable .modal-content  {
     max-height: calc(100vh - 1rem);
     overflow: hidden;
 }
 
 .modal-dialog-scrollable .modal-header,
-.modal-dialog-scrollable .modal-footer {
+.modal-dialog-scrollable .modal-footer l {
     -ms-flex-negative: 0;
     flex-shrink: 0;
 }
@@ -6535,7 +6535,7 @@ a.close.disabled {
 }
 
 @media (min-width: 576px) {
-    .modal-dialog {
+    .modal-dialog .modal-dialog-small {
         max-width: 500px;
         margin: 1.75rem auto;
     }
